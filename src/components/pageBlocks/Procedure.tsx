@@ -5,7 +5,7 @@ import arrow from "../../assets/arrow.png";
 const Procedure = () => {
   return (
     <Container>
-      <h1>See how it works</h1>
+      <h1>The 3-step process</h1>
       <div className="card-container">
         <Card>
           <CardHeader>1 | Capture</CardHeader>

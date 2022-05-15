@@ -40,7 +40,7 @@ function Header() {
           <img src={logo} alt="logo" id="logo" />
           <div className="container-header">
             <span>Note taking just got a lot more </span>
-            <span id="container-word">Visual</span>
+            <span id="container-word">visual</span>
           </div>
           <div className="subtitle">
             The all-in-one tool you need to transform ideas into valuable
