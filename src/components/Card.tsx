@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "../styles/card.module.css"
+import { ReactChildren } from "../util/interface";
 
-interface ReactChildren{
-    "children":React.ReactNode
-}
+
 
 const Card = ({children}:ReactChildren) =>{
     return <div className={styles.card}>

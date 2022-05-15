@@ -1,0 +1,6 @@
+.grid{
+    display:flex;
+    height: 300px;
+    text-align: left;
+    gap: 30px;
+}
