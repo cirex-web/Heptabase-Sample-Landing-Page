@@ -3,9 +3,8 @@ import {
   SlIcon,
   SlButtonGroup,
 } from "@shoelace-style/shoelace/dist/react";
-import React from "react";
 import "../../styles/header.css";
-import { getOS } from "../../hooks/getOS";
+import { getOS } from "../../util/getOS";
 import logo from "../../assets/logo.png";
 
 type possible_os = "Mac" | "Windows" | "Mac with M1 chip" | "Linux";
@@ -41,10 +40,10 @@ function Header() {
           <img src={logo} alt="logo" id="logo" />
           <div className="container-header">
             <span>Note taking just got a lot more </span>
-            <span id="container-word">visual</span>
+            <span id="container-word">Visual</span>
           </div>
           <div className="subtitle">
-            The all-in-one tool you need to transform ideas into valuble
+            The all-in-one tool you need to transform ideas into valuable
             content.
           </div>
         </div>
@@ -61,7 +60,7 @@ function Header() {
             Install on {main_os_key}
           </SlButton>
           <SlButtonGroup>
-            {Object.keys(downloads).map((os,i) => {
+            {Object.keys(downloads).map((os, i) => {
               if (os !== main_os_key) {
                 return (
                   <SlButton href={downloads[os as possible_os].url} key={i}>

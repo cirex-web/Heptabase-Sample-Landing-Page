@@ -1,6 +1,17 @@
 @tailwind base;
 @tailwind utilities;
-body{
+:root {
+  --swiper-navigation-color: white;
+}
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+body {
   display: flex;
   flex-direction: column;
   font-family: var(--sl-font-sans);
@@ -8,18 +19,31 @@ body{
   margin: auto;
   background-color: #181718;
   color: white;
+  position: relative;
 }
-h1{
+h1 {
   font-size: var(--sl-font-size-2x-large);
+  margin: 30px 0;
+  font-weight: 700;
 }
-img{
+img {
   border-radius: 10px;
 }
-.container{
+.container {
   padding: 70px 50px;
   box-sizing: border-box;
   text-align: center;
 }
-sl-button.large::part(base){
+.card-container {
+  display: flex;
+  gap: 5px;
+  max-width: 100%;
+}
+.card-container img {
+  max-width: 90px;
+  align-self: center;
+  /* height: auto; */
+}
+sl-button.large::part(base) {
   font-size: larger;
 }

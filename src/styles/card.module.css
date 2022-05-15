@@ -1,0 +1,32 @@
+.card {
+  padding: 32px;
+  padding-right: 25px;
+  background-color: #282a2e;
+  color: #e1e1e1;
+  border-radius: 12px;
+  text-align: left;
+  transition: 0.3s all;
+  outline: 3px transparent solid;
+  width: 900px;
+  margin: 0 auto;
+}
+/* .card:hover {
+  outline-color: #e1e1e1;
+} */
+.header {
+  font-weight: bold;
+  font-size: var(--sl-font-size-large);
+  margin: 24px 0;
+}
+.content {
+  font-size: var(--sl-font-size-medium);
+  margin: 18px 0;
+}
+.largeContent{
+  composes:content;
+  font-size: var(--sl-font-size-large);
+
+}
+strong{
+  text-decoration: underline;
+}
