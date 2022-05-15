@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind utilities;
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: var(--sl-font-sans);
+  max-width: 72rem;
+  margin: auto;
+  background-color: #181718;
+  color: white;
+}
+h1{
+  font-size: var(--sl-font-size-2x-large);
+}
+img{
+  border-radius: 10px;
+}
+.container{
+  padding: 70px 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+sl-button.large::part(base){
+  font-size: larger;
+}
