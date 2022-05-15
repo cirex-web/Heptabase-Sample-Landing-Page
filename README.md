@@ -13,6 +13,7 @@ Made with
 - React
 - [Shoelace](https://shoelace.style/) for some components and design tokens
 - Typescript
+- TailwindCSS (abandoned after realizing how much it cluttered the JSX) 
 
 And inspired by [the real Heptabase site](https://heptabase.com/)
 
